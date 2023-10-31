@@ -3,7 +3,7 @@ import {databases,PROJECT_ID,DATABASE_ID,COLLECTION_ID_MESSAGES} from '../WriteC
 import { ID, Query } from "appwrite"
 import "../sala.css"
 
-const Sala = () =>{
+export default function Sala (){
 
     const[messages,getMessages]= useState([]);
     const[messagemCorpo,setMensagem]=useState("");
@@ -67,4 +67,3 @@ const Sala = () =>{
         </div>
     )
 }
-export default Sala
